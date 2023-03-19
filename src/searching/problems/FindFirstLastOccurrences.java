@@ -3,10 +3,9 @@ package searching.problems;
 import java.util.ArrayList;
 
 // https://practice.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/1
-// TODO: ASKED IN GFG CHAT
 public class FindFirstLastOccurrences {
 
-	public static ArrayList<Long> find(long arr[], int n, int x) {
+	public static ArrayList<Long> find(long[] arr, int n, int x) {
 		long left = 0, right = arr.length - 1;
 		ArrayList<Long> arrayList = new ArrayList<> ( );
 		long firstOccur = -1L;
