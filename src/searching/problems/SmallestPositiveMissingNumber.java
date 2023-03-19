@@ -3,26 +3,20 @@ package searching.problems;
 import java.util.HashSet;
 
 // https://practice.geeksforgeeks.org/batch/cp-47/track/DSASP-Searching/problem/smallest-positive-missing-number-1587115621
-// TODO: ASKED PRIYANSH TO MAKE TC = O(N) & SC = O(1), mine is TC = O(N) & SC = O(N)
+// TODO: MAKE TC = O(N) & SC = O(1), mine is TC = O(N) & SC = O(N)
 public class SmallestPositiveMissingNumber {
 
 	public static int missingNumber(int[] arr, int size) {
 		if (arr.length == 1 && arr[ 0 ] == 0) return 1;
-		int smallestMissing = Integer.MAX_VALUE;
 		HashSet<Integer> hashSet = new HashSet<> ( );
 		for (int integer : arr) {
-			// find the smallest int in array
-			if (integer > 0 && smallestMissing > integer)
-				smallestMissing = integer;
 			// insert +ve int in hashset
 			if (integer > 0) hashSet.add ( integer );
 		}
 		for (int i = 0; i <= hashSet.size ( ); i++) {
-			if (hashSet.contains ( i + 1 )) {
-				smallestMissing = i + 1;
-			} else return i + 1;
+			if (!hashSet.contains ( i + 1 )) return i + 1;
 		}
-		return smallestMissing;
+		return hashSet.size ( ) + 1;
 	}
 
 	public static void main(String[] args) {
