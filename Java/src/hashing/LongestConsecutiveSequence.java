@@ -44,8 +44,6 @@ public class LongestConsecutiveSequence {
 		int[] array2 = new int[ 1000001 ];
 		int maxLen = 0;
 		int count = 0;
-		int maxInteger = Integer.MIN_VALUE;
-		int sequenceFirstElement = -1;
 		HashMap<Integer, Integer> hashMap = new HashMap<> ( );
 		for (Integer integer : array) {
 			hashMap.put ( integer, hashMap.getOrDefault ( integer, 0 ) + 1 );
@@ -68,23 +66,6 @@ public class LongestConsecutiveSequence {
 		}
 		System.out.println ( hashMap );
 		System.out.println ( maxLen );
-		/*for (Integer integer : array) {
-			array2[ integer ]++;
-			maxInteger = Math.max ( maxInteger, integer );
-		}
-		for (int i = 0; i <= maxInteger; i++) {
-			System.out.print ( array2[ i ] + " " );
-			if (array2[ i ] > 0) {
-				sequenceFirstElement = array2[ i ];
-				count++;
-			} else {
-				maxLen = Math.max ( maxLen, count );
-				count = 0;
-			}
-			maxLen = Math.max ( maxLen, count );
-		}
-		System.out.println ( "\nmaxlen = " + maxLen );
-		System.out.println ( "sequenceFirstElement = " + sequenceFirstElement );*/
 		ArrayList<Integer> arrayList = new ArrayList<> ( );
 		return arrayList;
 	}
