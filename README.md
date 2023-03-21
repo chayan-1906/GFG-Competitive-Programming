@@ -44,7 +44,6 @@ Brainstorming upon your code will increase your coding skills as well as it will
 ### Linked List:
 
 ### Searching:
-
 - Binary Search
 - Count no of 1s in a sorted array
 - Count occurrences of a given number in a sorted array
@@ -58,7 +57,6 @@ Brainstorming upon your code will increase your coding skills as well as it will
 - Pair with given sum in sorted array (Time Complexity = O(n) & Auxiliary Space = O(1))
 
 ### Hashing:
-
 - Open Addressing
 - Separate Chaining
 - Count no. of distinct elements in an array
