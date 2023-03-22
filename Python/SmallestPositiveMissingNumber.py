@@ -1,3 +1,4 @@
+# https://practice.geeksforgeeks.org/problems/smallest-positive-missing-number-1587115621/1
 class Solution:
     
     #Function to find the smallest positive number missing from the array.

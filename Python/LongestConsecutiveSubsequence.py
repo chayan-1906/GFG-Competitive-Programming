@@ -1,3 +1,4 @@
+#https://practice.geeksforgeeks.org/problems/longest-consecutive-subsequence2449/1
 class Solution:
     
     # arr[] : the input array

@@ -1,4 +1,4 @@
-#User function Template for python3
+# https://practice.geeksforgeeks.org/problems/first-element-to-occur-k-times5150/1
 
 class Solution:
     def firstElementKTime(self,  a, n, k):
