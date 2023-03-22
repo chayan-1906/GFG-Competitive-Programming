@@ -43,3 +43,8 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+GFG-Competitive-Programming.iml
+.idea/.gitignore
+.idea/misc.xml
+.idea/modules.xml

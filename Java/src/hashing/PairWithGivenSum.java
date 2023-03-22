@@ -16,12 +16,13 @@ public class PairWithGivenSum {
 				return result;
 			}
 			hashSet.add ( integer );
-			System.out.println ( hashSet );
+//			System.out.println ( hashSet );
 		}
 		return result;
 	}
 
 	public static void main(String[] args) {
-		System.out.println ( "result : " + Arrays.toString ( findPairWithGivenSum ( new int[]{8, 3, 4, 2, 5}, 6 ) ) );
+		System.out.println ( Arrays.toString ( findPairWithGivenSum ( new int[]{8, 3, 4, 2, 5}, 6 ) ) );
+		System.out.println ( Arrays.toString ( findPairWithGivenSum ( new int[]{1, 4, 2, 4}, 8 ) ) );
 	}
 }

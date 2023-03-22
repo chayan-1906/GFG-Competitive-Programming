@@ -27,7 +27,6 @@ import java.util.HashMap;
  * -1: i = 6, prefixSum = -1, hashmap.containsKey(-1) --> true, start = 4, end = 6, maxLen = 6
  */
 
-
 public class LongestSubarrayWithEqual0s1s {
 
 	public static ArrayList<Integer> findLongestSubarrayWithEqual0s1s(int[] array) {
