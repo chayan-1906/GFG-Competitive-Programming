@@ -55,6 +55,7 @@ Brainstorming upon your code will increase your coding skills as well as it will
 - Square root of a number
 - Triplet with given sum in a sorted array
 - Pair with given sum in sorted array (Time Complexity = O(n) & Auxiliary Space = O(1))
+- Median of two sorted arrays
 
 ### Hashing:
 - Open Addressing
