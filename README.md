@@ -1,15 +1,18 @@
 # GFG-Competitive-Programming
+
 <h1 align="center">
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello+coder!;Have+a+great+day;&center=true&size=35">
 </h1>
 
-## What is CP (Competitive Programming)? 
+## What is CP (Competitive Programming)?
+
 ```
 Competitive programming is a sport. 
 A sport based on problem-solving skills, thinking ability, speed testing, regularity and to be precise. 
 Competitive Programming will help you build logic and implement that logic to find solutions to a real-world problem. 
 Brainstorming upon your code will increase your coding skills as well as it will help to expand your thinking capacity.
 ```
+
 ---
 
 ## Platform to practice CP:
@@ -44,6 +47,7 @@ Brainstorming upon your code will increase your coding skills as well as it will
 ### Linked List:
 
 ### Searching:
+
 - Binary Search
 - Count no of 1s in a sorted array
 - Count occurrences of a given number in a sorted array
@@ -56,8 +60,10 @@ Brainstorming upon your code will increase your coding skills as well as it will
 - Triplet with given sum in a sorted array
 - Pair with given sum in sorted array (Time Complexity = O(n) & Auxiliary Space = O(1))
 - Median of two sorted arrays
+- Repeating Element (Time Complexity = O(n), Auxiliary Space = O(1), without modifying array)
 
 ### Hashing:
+
 - Open Addressing
 - Separate Chaining
 - Count no. of distinct elements in an array
