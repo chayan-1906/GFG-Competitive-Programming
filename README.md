@@ -60,7 +60,8 @@ Brainstorming upon your code will increase your coding skills as well as it will
 - Triplet with given sum in a sorted array
 - Pair with given sum in sorted array (Time Complexity = O(n) & Auxiliary Space = O(1))
 - Median of two sorted arrays
-- Repeating Element (Time Complexity = O(n), Auxiliary Space = O(1), without modifying array)
+- Repeating element (Time Complexity = O(n), Auxiliary Space = O(1), without modifying array)
+- Allocate minimum no. of pages
 
 ### Hashing:
 
