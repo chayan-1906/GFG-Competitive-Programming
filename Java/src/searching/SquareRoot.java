@@ -7,7 +7,7 @@ public class SquareRoot {
 		int low = 1, high = square, sqrt = -1;
 		while (low <= high) {
 			int mid = low + (high - low) / 2;
-			int msq = mid * mid;
+			long msq = (long) mid * mid;
 			if (msq == square) return mid;
 			else if (msq > square) high = mid - 1;
 			else {
