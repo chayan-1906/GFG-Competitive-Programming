@@ -62,6 +62,8 @@ Brainstorming upon your code will increase your coding skills as well as it will
 - Median of two sorted arrays
 - Repeating element (Time Complexity = O(n), Auxiliary Space = O(1), without modifying array)
 - Allocate minimum no. of pages
+- Count more than n/k occurrences
+- Two repeated elements
 
 ### Hashing:
 
