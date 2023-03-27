@@ -1,6 +1,6 @@
 package linkedlist.problems;
 
-import linkedlist.DoublyLinkedList.DListNode;
+import linkedlist.tutorials.DoublyLinkedList.DListNode;
 
 public class AddNodeDLL {
 

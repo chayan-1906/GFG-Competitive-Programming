@@ -1,7 +1,7 @@
 package linkedlist.problems;
 
-import linkedlist.SinglyLinkedList;
-import linkedlist.SinglyLinkedList.SinglyLinkedListNode;
+import linkedlist.tutorials.SinglyLinkedList;
+import linkedlist.tutorials.SinglyLinkedList.SinglyLinkedListNode;
 
 public class SwapKthNode {
 

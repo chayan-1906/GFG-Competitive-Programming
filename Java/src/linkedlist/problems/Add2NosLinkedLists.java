@@ -1,6 +1,6 @@
 package linkedlist.problems;
 
-import linkedlist.SinglyLinkedList.SinglyLinkedListNode;
+import linkedlist.tutorials.SinglyLinkedList.SinglyLinkedListNode;
 
 public class Add2NosLinkedLists {
 
