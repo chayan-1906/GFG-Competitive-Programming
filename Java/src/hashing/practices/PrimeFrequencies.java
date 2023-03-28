@@ -1,6 +1,7 @@
 package hashing.practices;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 
@@ -19,10 +20,13 @@ public class PrimeFrequencies {
 			if (value >= K && isPrime ( value )) arrayList.add ( key );
 		}
 		if (arrayList.isEmpty ( )) arrayList.add ( -1 );
+		Collections.sort ( arrayList );
 		return arrayList;
 	}
 
 	private static boolean isPrime(Integer value) {
+		if (value == 1) return false;
+		if (value == 2) return true;
 		for (int i = 2; i < value; i++)
 			if (value % i == 0) return false;
 		return true;
