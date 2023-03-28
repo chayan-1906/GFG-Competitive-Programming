@@ -1,51 +1,43 @@
 package linkedlist.practices;
 
+
 import linkedlist.tutorials.SinglyLinkedList;
 import linkedlist.tutorials.SinglyLinkedList.SinglyLinkedListNode;
 
-// https://practice.geeksforgeeks.org/problems/remove-all-occurences-of-duplicates-in-a-linked-list/1
+// https://practice.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1
 public class RemoveDuplicatesSortedLL {
 
-	public static SinglyLinkedListNode removeAllDuplicates(SinglyLinkedListNode head) {
-		SinglyLinkedListNode dummyPtr = new SinglyLinkedListNode ( 0 );
-		dummyPtr.next = head;
-		SinglyLinkedListNode currentPtr = head;
-		SinglyLinkedListNode prevPtr = dummyPtr;
-		while (currentPtr != null) {
-			while (currentPtr.next != null && prevPtr.next.data == currentPtr.next.data)
-				currentPtr = currentPtr.next;
-			if (prevPtr.next == currentPtr) prevPtr = prevPtr.next;
-			else prevPtr.next = currentPtr.next;
-			currentPtr = currentPtr.next;
+	static SinglyLinkedListNode removeDuplicates(SinglyLinkedListNode head) {
+		if (head == null || head.next == null) return head;
+		SinglyLinkedListNode firstNode = head;
+		SinglyLinkedListNode secondNode = head.next;
+		while (secondNode.next != null) {
+			if (firstNode.data == secondNode.data) {
+				firstNode.next = secondNode.next;
+			} else {
+				firstNode = secondNode;
+			}
+			secondNode = secondNode.next;
+			System.out.println ( firstNode.data + " " + secondNode.data );
 		}
-		head = dummyPtr.next;
+		if (firstNode.data == secondNode.data) firstNode.next = null;
 		return head;
 	}
 
 	public static void main(String[] args) {
-		SinglyLinkedListNode head = new SinglyLinkedListNode ( 23 );
-		SinglyLinkedListNode temp1 = new SinglyLinkedListNode ( 28 );
-		SinglyLinkedListNode temp2 = new SinglyLinkedListNode ( 28 );
-		SinglyLinkedListNode temp3 = new SinglyLinkedListNode ( 35 );
-		SinglyLinkedListNode temp4 = new SinglyLinkedListNode ( 49 );
-		SinglyLinkedListNode temp5 = new SinglyLinkedListNode ( 49 );
-		SinglyLinkedListNode temp6 = new SinglyLinkedListNode ( 49 );
-		SinglyLinkedListNode temp7 = new SinglyLinkedListNode ( 53 );
-		SinglyLinkedListNode temp8 = new SinglyLinkedListNode ( 53 );
-		SinglyLinkedListNode temp9 = new SinglyLinkedListNode ( 53 );
-		// 23 --> 28 --> 28 --> 35 --> 49 --> 49 --> 53 --> 53
-
+		SinglyLinkedListNode head = new SinglyLinkedListNode ( 1 );
+		SinglyLinkedListNode temp1 = new SinglyLinkedListNode ( 2 );
+		SinglyLinkedListNode temp2 = new SinglyLinkedListNode ( 2 );
+		SinglyLinkedListNode temp3 = new SinglyLinkedListNode ( 4 );
+		SinglyLinkedListNode temp4 = new SinglyLinkedListNode ( 4 );
+		SinglyLinkedListNode temp5 = new SinglyLinkedListNode ( 4 );
 		head.next = temp1;
 		temp1.next = temp2;
 		temp2.next = temp3;
 		temp3.next = temp4;
 		temp4.next = temp5;
-		temp5.next = temp6;
-		temp6.next = temp7;
-		temp7.next = temp8;
-		temp8.next = temp9;
-
+		temp5.next = null;
 		SinglyLinkedList.printSinglyLinkedList ( head );
-		SinglyLinkedList.printSinglyLinkedList ( removeAllDuplicates ( head ) );
+		SinglyLinkedList.printSinglyLinkedList ( removeDuplicates ( head ) );
 	}
 }

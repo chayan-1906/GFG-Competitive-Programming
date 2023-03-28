@@ -6,7 +6,6 @@ import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 
 // https://practice.geeksforgeeks.org/problems/numbers-with-prime-frequencies-greater-than-or-equal-to-k5823/1
-// TODO: ASKED IN GFG CHAT
 public class PrimeFrequencies {
 
 	static ArrayList<Integer> primeOccurences(int[] arr, int K) {
