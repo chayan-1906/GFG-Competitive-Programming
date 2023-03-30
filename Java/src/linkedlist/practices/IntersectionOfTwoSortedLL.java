@@ -9,7 +9,7 @@ public class IntersectionOfTwoSortedLL {
 		SinglyLinkedListNode node1 = head1;
 		SinglyLinkedListNode node2 = head2;
 		SinglyLinkedListNode node = new SinglyLinkedListNode ( -1 );
-		SinglyLinkedListNode temp = node;
+		SinglyLinkedListNode newHead = node;
 		while (node1 != null && node2 != null) {
 			if (node1.data < node2.data) {
 				node1 = node1.next;
@@ -22,7 +22,7 @@ public class IntersectionOfTwoSortedLL {
 				node2 = node2.next;
 			}
 		}
-		return temp.next;
+		return newHead.next;
 	}
 
 	public static void main(String[] args) {
