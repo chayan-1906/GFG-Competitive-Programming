@@ -20,8 +20,8 @@ public class NextGreaterElement {
                 }
             }
             stack.push(arr[i]);
-            System.out.println(stack);
-            System.out.println(Arrays.toString(result));
+//            System.out.println(stack);
+//            System.out.println(Arrays.toString(result));
         }
         return result;
 
@@ -37,6 +37,6 @@ public class NextGreaterElement {
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(nextLargerElement(new long[]{1, 3, 2, 4}, 4)));   // 3 4 4 -1
-//        System.out.println(Arrays.toString(nextLargerElement(new long[]{6, 8, 0, 1, 3}, 5)));   // 8 -1 1 3 -1
+        System.out.println(Arrays.toString(nextLargerElement(new long[]{6, 8, 0, 1, 3}, 5)));   // 8 -1 1 3 -1
     }
 }
