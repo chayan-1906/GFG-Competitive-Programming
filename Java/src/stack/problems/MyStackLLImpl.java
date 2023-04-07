@@ -38,19 +38,22 @@ public class MyStackLLImpl {
     // Insert at beginning --> O(1)
     static void push(int a) {
         StackNode newnode = new StackNode(a);
-        newnode.next = top;
-        top = newnode;
+        if (top == null) top = newnode;
+        else {
+            newnode.next = top;
+            top = newnode;
+        }
     }
 
     // Delete from the beginning --> O(1)
     static int pop() {
         if (top == null) return -1;
-        else if (top.next == null) {
+        /*else if (top.next == null) {
             int poppedElement = top.data;
             top = null;
             return poppedElement;
-        }
-        int poppedElement = top.data;
+        }*/
+        int poppedElement = top.next.data;
         top = top.next;
         return poppedElement;
     }
