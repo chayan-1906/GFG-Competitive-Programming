@@ -7,6 +7,7 @@ import java.util.Stack;
 public class NextGreaterElement {
 
     public static long[] nextLargerElement(long[] arr, int n) {
+        /* both solutions are correct */
         Stack<Long> stack = new Stack<>();
         stack.push(0L);
         long[] result = new long[arr.length];
@@ -20,10 +21,23 @@ public class NextGreaterElement {
                 }
             }
             stack.push(arr[i]);
-//            System.out.println(stack);
-//            System.out.println(Arrays.toString(result));
         }
         return result;
+
+        /*Stack<Long> stack = new Stack<>();
+        stack.push(arr[arr.length - 1]);
+        long[] result = new long[arr.length];
+        result[arr.length - 1] = -1;
+        for (int i = arr.length - 2; i >= 0; i--) {
+            if (arr[i] < stack.peek()) result[i] = stack.peek();
+            else {
+                while (!stack.isEmpty() && arr[i] >= stack.peek()) stack.pop();
+                if (stack.isEmpty()) result[i] = -1;
+                else result[i] = stack.peek();
+            }
+            stack.push(arr[i]);
+        }
+        return result;*/
 
         /**
          * Testcase Dry Run --> {1, 3, 2, 4}

@@ -38,12 +38,4 @@ public class EvaluatePostfix {
         System.out.println(evaluatePostfix("10 2 3 ^ ^"));  // 100000000
         System.out.println(evaluatePostfix("2 3 1 * + 9 -"));  // -4
     }
-
-    public static boolean isOperator(Character character) {
-        return character == '+'
-                || character == '-'
-                || character == '*'
-                || character == '/'
-                || character == '^';
-    }
 }
