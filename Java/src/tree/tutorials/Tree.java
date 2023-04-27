@@ -1,5 +1,8 @@
 package tree.tutorials;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Tree {
 
     // https://practice.geeksforgeeks.org/batch/cp-47/track/DSASP-Tree/video/MTI3Mg%3D%3D
@@ -42,6 +45,19 @@ public class Tree {
         else {
             printNodesAtKDistance(root.left, k - 1);
             printNodesAtKDistance(root.right, k - 1);
+        }
+    }
+
+    // https://practice.geeksforgeeks.org/batch/cp-47/track/DSASP-Tree/video/MTQ5MDM%3D
+    public static void levelOrderTraversal(TreeNode root) {
+        if (root == null) return;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode current = queue.poll();
+            System.out.println(current.data + " ");
+            if (current.left != null) queue.add(current.left);
+            if (current.right != null) queue.add(current.right);
         }
     }
 
