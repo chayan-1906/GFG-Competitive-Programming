@@ -7,7 +7,11 @@ package tree.tutorials;
  */
 public class MaximumInBinaryTree {
 
-    /*public static int maximumInBinaryTree(Tree.TreeNode root) {
-
-    }*/
+    public static int getMax(Tree.TreeNode root) {
+        if (root == null) return Integer.MIN_VALUE;
+        /*return Math.max(root.data, Math.max(getMax(root.left), getMax(root.right)));*/
+        int leftMax = getMax(root.left);
+        int rightMax = getMax(root.right);
+        return Math.max(root.data, Math.max(leftMax, rightMax));
+    }
 }
