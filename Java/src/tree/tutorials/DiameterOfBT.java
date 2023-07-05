@@ -17,19 +17,19 @@ public class DiameterOfBT {
 
     // O(n²)
     static int diameter(Tree.TreeNode root) {
-        if (root == null) return 0;
-        int d1 = 1 + height(root.left) + height(root.right);
-        int d2 = diameter(root.left);
-        int d3 = diameter(root.right);
-        return Math.max(d1, Math.max(d2, d3));
+        int[] dia = new int[1];
+        calculateDiameter(root, dia);
+        return dia[0];
     }
 
     // TODO: ASKED IN GFG CHAT
-    int calculateDiameter(Tree.TreeNode root) {
-        if (root == null) return 0;
-        int lh = calculateDiameter(root.left);
-        int rh = calculateDiameter(root.right);
-        diameter = Math.max(diameter, lh + rh + 1);
-        return 1 + Math.max(lh, rh);
+    static int calculateDiameter(Tree.TreeNode root, int[] dia) {
+        if (root == null) {
+            return 0;
+        }
+        int lh = calculateDiameter(root.left, dia);
+        int rh = calculateDiameter(root.right, dia);
+        dia[0] = Math.max(dia[0], lh + rh + 1);
+        return Math.max(lh, rh) + 1;
     }
 }
