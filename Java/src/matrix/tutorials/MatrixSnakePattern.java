@@ -1,4 +1,4 @@
-package matrix.practices;
+package matrix.tutorials;
 
 /**
  * https://practice.geeksforgeeks.org/batch/cp-47/track/DSASP-Matrix/video/MTQ1Nw%3D%3D
