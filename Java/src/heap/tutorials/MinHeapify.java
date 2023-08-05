@@ -14,8 +14,8 @@ public class MinHeapify {
         int lt = Heap.leftChild(i);
         int rt = Heap.rightChild(i);
         int smallest = i;
-        if (lt < Heap.size && Heap.arr[lt] < Heap.arr[i]) smallest = lt;
-        if (rt < Heap.size && Heap.arr[rt] < Heap.arr[i]) smallest = rt;
+        if (lt < Heap.size && Heap.arr[lt] < Heap.arr[smallest]) smallest = lt;
+        if (rt < Heap.size && Heap.arr[rt] < Heap.arr[smallest]) smallest = rt;
         if (smallest != i) {
             swap(i, smallest);
             minHeapify(smallest);
