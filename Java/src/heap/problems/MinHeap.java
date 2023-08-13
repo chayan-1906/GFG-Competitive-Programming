@@ -2,6 +2,11 @@ package heap.problems;
 
 import java.util.Arrays;
 
+/**
+ * @author padmanabhadas
+ * https://practice.geeksforgeeks.org/batch/cp-47/track/DSASP-Heap/problem/operations-on-binary-min-heap
+ */
+
 public class MinHeap {
     static int[] harr;
     static int capacity;
