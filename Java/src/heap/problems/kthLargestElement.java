@@ -19,8 +19,7 @@ public class kthLargestElement {
                 priorityQueue.add(arr[i]);
             }
         }
-        System.out.println(priorityQueue);
-        return 0;
+        return priorityQueue.peek();
     }
 
     public static void main(String[] args) {
